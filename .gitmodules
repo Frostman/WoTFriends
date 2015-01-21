@@ -4,3 +4,6 @@
 [submodule "Frameworks/SwiftyJSON"]
 	path = Frameworks/SwiftyJSON
 	url = https://github.com/SwiftyJSON/SwiftyJSON
+[submodule "Frameworks/Alamofire-SwiftyJSON"]
+	path = Frameworks/Alamofire-SwiftyJSON
+	url = https://github.com/SwiftyJSON/Alamofire-SwiftyJSON
