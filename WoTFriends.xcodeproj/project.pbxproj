@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		576B087C1A70039D00C7731C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B087B1A70039D00C7731C /* AppDelegate.swift */; };
+		576B087E1A70039D00C7731C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B087D1A70039D00C7731C /* ViewController.swift */; };
+		576B08811A70039D00C7731C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576B087F1A70039D00C7731C /* Main.storyboard */; };
+		576B08831A70039D00C7731C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 576B08821A70039D00C7731C /* Images.xcassets */; };
+		576B08861A70039D00C7731C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 576B08841A70039D00C7731C /* LaunchScreen.xib */; };
+		576B08921A70039D00C7731C /* WoTFriendsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B08911A70039D00C7731C /* WoTFriendsTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		576B088C1A70039D00C7731C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 576B086E1A70039D00C7731C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 576B08751A70039D00C7731C;
+			remoteInfo = WoTFriends;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		576B08761A70039D00C7731C /* WoTFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoTFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		576B087A1A70039D00C7731C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		576B087B1A70039D00C7731C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		576B087D1A70039D00C7731C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		576B08801A70039D00C7731C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		576B08821A70039D00C7731C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		576B08851A70039D00C7731C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		576B088B1A70039D00C7731C /* WoTFriendsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WoTFriendsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		576B08901A70039D00C7731C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		576B08911A70039D00C7731C /* WoTFriendsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoTFriendsTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		576B08731A70039D00C7731C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		576B08881A70039D00C7731C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		576B086D1A70039D00C7731C = {
+			isa = PBXGroup;
+			children = (
+				576B08781A70039D00C7731C /* WoTFriends */,
+				576B088E1A70039D00C7731C /* WoTFriendsTests */,
+				576B08771A70039D00C7731C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		576B08771A70039D00C7731C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				576B08761A70039D00C7731C /* WoTFriends.app */,
+				576B088B1A70039D00C7731C /* WoTFriendsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		576B08781A70039D00C7731C /* WoTFriends */ = {
+			isa = PBXGroup;
+			children = (
+				576B087B1A70039D00C7731C /* AppDelegate.swift */,
+				576B087D1A70039D00C7731C /* ViewController.swift */,
+				576B087F1A70039D00C7731C /* Main.storyboard */,
+				576B08821A70039D00C7731C /* Images.xcassets */,
+				576B08841A70039D00C7731C /* LaunchScreen.xib */,
+				576B08791A70039D00C7731C /* Supporting Files */,
+			);
+			path = WoTFriends;
+			sourceTree = "<group>";
+		};
+		576B08791A70039D00C7731C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				576B087A1A70039D00C7731C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		576B088E1A70039D00C7731C /* WoTFriendsTests */ = {
+			isa = PBXGroup;
+			children = (
+				576B08911A70039D00C7731C /* WoTFriendsTests.swift */,
+				576B088F1A70039D00C7731C /* Supporting Files */,
+			);
+			path = WoTFriendsTests;
+			sourceTree = "<group>";
+		};
+		576B088F1A70039D00C7731C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				576B08901A70039D00C7731C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		576B08751A70039D00C7731C /* WoTFriends */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 576B08951A70039D00C7731C /* Build configuration list for PBXNativeTarget "WoTFriends" */;
+			buildPhases = (
+				576B08721A70039D00C7731C /* Sources */,
+				576B08731A70039D00C7731C /* Frameworks */,
+				576B08741A70039D00C7731C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WoTFriends;
+			productName = WoTFriends;
+			productReference = 576B08761A70039D00C7731C /* WoTFriends.app */;
+			productType = "com.apple.product-type.application";
+		};
+		576B088A1A70039D00C7731C /* WoTFriendsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 576B08981A70039D00C7731C /* Build configuration list for PBXNativeTarget "WoTFriendsTests" */;
+			buildPhases = (
+				576B08871A70039D00C7731C /* Sources */,
+				576B08881A70039D00C7731C /* Frameworks */,
+				576B08891A70039D00C7731C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				576B088D1A70039D00C7731C /* PBXTargetDependency */,
+			);
+			name = WoTFriendsTests;
+			productName = WoTFriendsTests;
+			productReference = 576B088B1A70039D00C7731C /* WoTFriendsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		576B086E1A70039D00C7731C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Sergey Lukjanov";
+				TargetAttributes = {
+					576B08751A70039D00C7731C = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					576B088A1A70039D00C7731C = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 576B08751A70039D00C7731C;
+					};
+				};
+			};
+			buildConfigurationList = 576B08711A70039D00C7731C /* Build configuration list for PBXProject "WoTFriends" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 576B086D1A70039D00C7731C;
+			productRefGroup = 576B08771A70039D00C7731C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				576B08751A70039D00C7731C /* WoTFriends */,
+				576B088A1A70039D00C7731C /* WoTFriendsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		576B08741A70039D00C7731C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				576B08811A70039D00C7731C /* Main.storyboard in Resources */,
+				576B08861A70039D00C7731C /* LaunchScreen.xib in Resources */,
+				576B08831A70039D00C7731C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		576B08891A70039D00C7731C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		576B08721A70039D00C7731C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				576B087E1A70039D00C7731C /* ViewController.swift in Sources */,
+				576B087C1A70039D00C7731C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		576B08871A70039D00C7731C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				576B08921A70039D00C7731C /* WoTFriendsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		576B088D1A70039D00C7731C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 576B08751A70039D00C7731C /* WoTFriends */;
+			targetProxy = 576B088C1A70039D00C7731C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		576B087F1A70039D00C7731C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				576B08801A70039D00C7731C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		576B08841A70039D00C7731C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				576B08851A70039D00C7731C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		576B08931A70039D00C7731C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		576B08941A70039D00C7731C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		576B08961A70039D00C7731C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WoTFriends/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		576B08971A70039D00C7731C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WoTFriends/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		576B08991A70039D00C7731C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WoTFriendsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WoTFriends.app/WoTFriends";
+			};
+			name = Debug;
+		};
+		576B089A1A70039D00C7731C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WoTFriendsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WoTFriends.app/WoTFriends";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		576B08711A70039D00C7731C /* Build configuration list for PBXProject "WoTFriends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				576B08931A70039D00C7731C /* Debug */,
+				576B08941A70039D00C7731C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		576B08951A70039D00C7731C /* Build configuration list for PBXNativeTarget "WoTFriends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				576B08961A70039D00C7731C /* Debug */,
+				576B08971A70039D00C7731C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		576B08981A70039D00C7731C /* Build configuration list for PBXNativeTarget "WoTFriendsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				576B08991A70039D00C7731C /* Debug */,
+				576B089A1A70039D00C7731C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 576B086E1A70039D00C7731C /* Project object */;
+}
