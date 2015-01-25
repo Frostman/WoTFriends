@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         installation.channels = friendsManager.listAll().filter { $0.isSubscribed }.map { "wg\($0.wgId)" }
         installation.saveInBackgroundWithBlock {
             (succeeded, error) in
-            NSLog("installation saved: \(succeeded); channels: \(installation.channels)")
+            NSLog("installation saved: \(succeeded); channels: \(installation.channels); installation: \(installation)")
         }
     }
 

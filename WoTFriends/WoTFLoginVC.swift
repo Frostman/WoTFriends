@@ -8,6 +8,8 @@
 
 import UIKit
 
+import Parse
+
 import WoTFriendsKit
 
 
@@ -34,6 +36,14 @@ class WoTFLoginVC: UIViewController, UIWebViewDelegate {
                 paramsDict[keyVal[0]] = keyVal[1]
             }
             // [expires_at: 1422913985, access_token: blabla, status: ok, nickname: Frostman, account_id: 31675]
+
+            let installation = PFInstallation.currentInstallation()
+            installation["wgId"] = paramsDict["account_id"]?.toInt()
+            installation.saveInBackgroundWithBlock {
+                (succeeded, error) in
+                NSLog("installation saved: \(succeeded); channels: \(installation.channels); installation: \(installation)")
+            }
+
 
             self.web?.stopLoading()
             UIApplication.sharedApplication().networkActivityIndicatorVisible = false

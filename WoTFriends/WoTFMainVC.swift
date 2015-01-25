@@ -84,7 +84,8 @@ class WoTFMainVC: UITableViewController {
             inviteMenu.addAction(UIAlertAction(title: "Invite", style: UIAlertActionStyle.Default) {
                 action in
                 let push = PFPush()
-                push.setChannel("invite\(friend.wgId)")
+                //push.setChannel("invite\(friend.wgId)")
+                push.setQuery(PFInstallation.query().whereKey("wgId", equalTo: friend.wgId))
                 push.setData(["alert": "Someplayer invites you to play WoT!"])
                 push.sendPushInBackgroundWithBlock {
                     (succeeded, error) in
