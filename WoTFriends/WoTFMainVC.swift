@@ -115,7 +115,7 @@ class WoTFMainVC: UITableViewController {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
 
         let friend = getFriend(indexPath)
-        let subscribeType = friend.isSubscribed ? "Subscribe" : "Unsubscribe"
+        let subscribeType = friend.isSubscribed ? "Unsubscribe" : "Subscribe"
 
         let subscribeMenu = UIAlertController(title: nil, message: "\(subscribeType) to \(friend.nickname)?", preferredStyle: .ActionSheet)
 
