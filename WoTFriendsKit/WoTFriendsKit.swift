@@ -308,7 +308,14 @@ public class FriendsManager {
 
         // fetch friends list if we have token
 
-        wgApi.getFriendInfoUpdates(self.listAll().map{ $0.wgId }) {
+        let friends = self.listAll()
+
+        if friends.count == 0 {
+            handler(error: false)
+            return
+        }
+
+        wgApi.getFriendInfoUpdates(friends.map{ $0.wgId }) {
             updates in
             if let updates = updates {
                 self.updateFriendsInfo(updates)

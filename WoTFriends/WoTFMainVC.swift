@@ -16,10 +16,19 @@ import WoTFriendsKit
 class WoTFMainVC: UITableViewController {
     private var friends: [Friend] = [Friend]()
 
-    func reloadData() {
-        self.friends = friendsManager.listAll()
-        self.tableView.reloadData()
-        self.refreshControl?.endRefreshing()
+    func reloadData(force: Bool = false) {
+        friendsManager.refreshFriendsInfo(force: force) {
+            error in
+            if !error {
+                self.friends = friendsManager.listAll()
+                self.tableView.reloadData()
+                self.refreshControl?.endRefreshing()
+            }
+        }
+    }
+
+    func doRefresh() {
+        self.reloadData(force: true)
     }
 
     func getFriend(indexPath: NSIndexPath) -> Friend {
@@ -29,7 +38,7 @@ class WoTFMainVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.refreshControl?.addTarget(self, action: "reloadData", forControlEvents: UIControlEvents.ValueChanged)
+        self.refreshControl?.addTarget(self, action: "doRefresh", forControlEvents: UIControlEvents.ValueChanged)
     }
 
     override func viewDidAppear(animated: Bool) {
