@@ -168,8 +168,19 @@ public class Friend : NSObject, NSCoding {
 
     public func lastSeenAgo() -> String {
         let now = NSDate().timeIntervalSince1970
-        let ago = NSString(format: "%.0f", (now - self.lastBattleTime) / 3600)
-        return "\(ago)h ago"
+        let ago = (now - self.lastBattleTime) / 60
+        if now == never {
+            return ""
+        } else if ago > 720 * 60 {
+            return ">1 mounth ago"
+        } else if ago >= 2 * 24 * 60 {
+            return NSString(format: "%.0f", ago / 60 / 24) + " days ago"
+        } else if ago >= 2 * 60 {
+            return NSString(format: "%.0f", ago / 60) + " hours ago"
+        } else if ago >= 2 {
+            return NSString(format: "%.0f", ago) + " minutes ago"
+        }
+        return "now playing!"
     }
 
     required convenience public init(coder aDecoder: NSCoder) {
