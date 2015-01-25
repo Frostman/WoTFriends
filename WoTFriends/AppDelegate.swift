@@ -8,15 +8,47 @@
 
 import UIKit
 
+import Parse
+import ParseCrashReporting
+
+import WoTFriendsKit
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
+        ParseCrashReporting.enable();
+        Parse.setApplicationId("UGtmgRM7Tprrh7kMKBN6QnWjrlJYIWo3JILkGaBe",
+            clientKey:"AYgx0iMgbMEFqLr1o1UF1eZDZw16pd6b8PWDJsJs")
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        let types:UIUserNotificationType = (.Alert | .Badge | .Sound)
+        let settings = UIUserNotificationSettings(forTypes: types, categories: nil)
+
+        application.registerUserNotificationSettings(settings)
+        application.registerForRemoteNotifications()
+
         return true
+    }
+
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+        let installation = PFInstallation.currentInstallation()
+        installation.setDeviceTokenFromData(deviceToken)
+        installation.channels = friendsManager.listAll().filter { $0.isSubscribed }.map { "wg\($0.wgId)" }
+        installation.saveInBackgroundWithBlock {
+            (succeeded, error) in
+            NSLog("installation saved: \(succeeded); channels: \(installation.channels)")
+        }
+    }
+
+    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+        NSLog("Failed to register for remote notifications:  \(error)")
+    }
+
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+        PFPush.handlePush(userInfo)
     }
 
     func applicationWillResignActive(application: UIApplication) {
