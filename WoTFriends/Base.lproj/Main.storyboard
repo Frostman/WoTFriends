@@ -40,9 +40,14 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="WoT Friends" id="uFf-Zh-qyj">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ba3-eM-mD0">
+                        <barButtonItem key="leftBarButtonItem" title="Login" id="y2o-7u-mO4">
                             <connections>
-                                <segue destination="BgW-vk-fQr" kind="show" id="wa8-VJ-ooJ"/>
+                                <segue destination="ae0-hD-hPF" kind="show" identifier="auth" id="Oro-ct-PD1"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="Ba3-eM-mD0">
+                            <connections>
+                                <segue destination="BgW-vk-fQr" kind="show" identifier="add_friend" id="wa8-VJ-ooJ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -63,6 +68,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ms5-qq-wY8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1593" y="397"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="CEv-JO-SdY">
+            <objects>
+                <viewController id="ae0-hD-hPF" customClass="WoTFLoginVC" customModule="WoTFriends" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d3d-zt-y9x"/>
+                        <viewControllerLayoutGuide type="bottom" id="QDs-5S-gMH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fwA-PP-Ar5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CEQ-0x-dDl">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login" id="XZV-QA-eY0"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="web" destination="CEQ-0x-dDl" id="vdu-Fu-Ls6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="szT-Bp-LbI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1593" y="1086"/>
         </scene>
         <!--Add friend-->
         <scene sceneID="e4t-8U-vd1">

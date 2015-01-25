@@ -40,6 +40,7 @@
 		57CA58E71A70584A00C77B09 /* WoTFriendsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CA58E61A70584A00C77B09 /* WoTFriendsKit.swift */; };
 		57D430481A7310DA00436EA8 /* WoTFMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D430471A7310DA00436EA8 /* WoTFMainVC.swift */; };
 		57F77C161A72FB470059F431 /* WoTFAddFriendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F77C151A72FB470059F431 /* WoTFAddFriendVC.swift */; };
+		57F91E871A75A5FA0029C8FA /* WoTFLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F91E861A75A5FA0029C8FA /* WoTFLoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -201,6 +202,7 @@
 		57CA58E61A70584A00C77B09 /* WoTFriendsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoTFriendsKit.swift; sourceTree = "<group>"; };
 		57D430471A7310DA00436EA8 /* WoTFMainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoTFMainVC.swift; sourceTree = "<group>"; };
 		57F77C151A72FB470059F431 /* WoTFAddFriendVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoTFAddFriendVC.swift; sourceTree = "<group>"; };
+		57F91E861A75A5FA0029C8FA /* WoTFLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoTFLoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,6 +290,7 @@
 				576B08791A70039D00C7731C /* Supporting Files */,
 				57F77C151A72FB470059F431 /* WoTFAddFriendVC.swift */,
 				57D430471A7310DA00436EA8 /* WoTFMainVC.swift */,
+				57F91E861A75A5FA0029C8FA /* WoTFLoginVC.swift */,
 			);
 			path = WoTFriends;
 			sourceTree = "<group>";
@@ -675,6 +678,7 @@
 			files = (
 				57D430481A7310DA00436EA8 /* WoTFMainVC.swift in Sources */,
 				57F77C161A72FB470059F431 /* WoTFAddFriendVC.swift in Sources */,
+				57F91E871A75A5FA0029C8FA /* WoTFLoginVC.swift in Sources */,
 				576B087C1A70039D00C7731C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
